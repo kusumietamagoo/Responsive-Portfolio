@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>KUSUMIETA PERSONAL PORTFOLIO WEBSITE</title>
+    <title>KUSUMIETA PORTFOLIO WEBSITE</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -17,18 +17,23 @@
       <a href="#" class="logo">Portfolio</a>
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
-        <a href="#home" class="active">Home</a>
+        <a href="#home" class="active">HOME</a>
         <a href="#about">ABOUT</a>
-        <a href="#services">SERVICES</a>
-        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#services">SKILLS</a>
+        <a href="#portfolio">PROJECTS</a>
         <a href="#contact">CONTACT</a>
       </nav>
     </header>
     <section class="home" id="home">
-      <div class="home-content">
+  <div class="home-img">
+    <img src="image\selfie.jpg" alt="Kusumieta's photo" />
+  </div>
+  <div class="home-content">
         <h3>Hello,It's Me</h3>
         <h1>Kusumieta Magoo</h1>
         <h3>And I'm a <span class="multiple-text"></span></h3>
+        <h3>Currently running on caffeine and curiosity
+           — scroll on to see the magic unfold!</h3>
         <div class="social-media">
           <a href="https://github.com/kusumietamagoo"
             ><i class="bx bxl-github"></i
@@ -38,18 +43,21 @@
           ></a>
           <a href="#"><i class="bx bxl-instagram"></i></a>
           <a href="https://www.linkedin.com/in/kusumieta-magoo-b53a62282/"
-            ><i class="bx bxl-linkedin-square"></i
-          ></a>
+            ><i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a href="https://leetcode.com/u/Kusumieta/" class="leetcode-icon" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode Icon">
+</a>
         </div>
         <a
-          href=""
+          href="https://github.com/kusumietamagoo/Resume-"
           class="btn"
           >Download CV</a
         >
       </div>
-      <div class="home-img">
-        <!<img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/10/computer_engineer-compare-page.jpg" alt="">
-      </div>
+<!--      <div class="home-img">
+  <img src="image\selfie_badge.jpg" alt="Kusumieta's photo" />
+</div> -->
     </section>
     <section class="about" id="about">
       <div class="about-img">
@@ -59,7 +67,7 @@
         <h2 class="heading">About<span>Me</span></h2>
         <h3>Software Developer</h3>
         <p>
-          Passionate undergraduate CSE student with a keen interest in AI and
+          Passionate CSE graduate with a keen interest in Software Development and AI/
           ML. Eager to explore the intersection of technology and innovation.
           Enthusiastic about leveraging cutting-edge algorithms to solve
           real-world problems. Committed to continuous learning and staying
@@ -76,10 +84,9 @@
           <i class="bx bx-code-alt"></i>
           <h3>CPP</h3>
           <p>
-            I have a basic to intermediate level knowledge of C++. I’ve applied
-            my skills to solve DSA problems and implement OOP concepts
+            I have intermediate level knowledge of C++. I’ve applied my skills
+            to solve DSA problems and implement OOP concepts.
           </p>
-          <a href="#" class="btn">Read More</a>
         </div>
 
         <div class="services-box">
@@ -89,37 +96,54 @@
             I possess a basic to intermediate understanding of Python. I've
             utilized this knowledge during internships and in college projects.
           </p>
-          <a href="#" class="btn">Read More</a>
         </div>
 
         <div class="services-box">
-          <i class="bx bxl-instagram-alt"></i>
-          <h3>Java</h3>
+          <i class="bx bx-data"></i>
+          <h3>SQL</h3>
           <p>
-            I have a basic to intermediate level knowledge of Java. I’ve applied
-            my skills to solve DSA problems and implement OOP concepts
+            I have a strong understanding of SQL, including database design,
+            queries, joins, and optimization. Experienced in MySQL and
+            PostgreSQL.
           </p>
-          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-cloud"></i>
+          <h3>Cloud Computing</h3>
+          <p>
+            Hands-on experience with cloud services, including AWS EC2, S3,
+            Lambda, and Azure Virtual Machines. Familiar with cloud deployment
+            and security.
+          </p>
         </div>
 
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
+          <h3>Data Structures & Algorithms</h3>
+          <p>
+            Strong foundation in DSA with problem-solving experience on LeetCode
+            and CodeChef. Proficient in sorting, searching, dynamic programming,
+            and graphs.
+          </p>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-brain"></i>
           <h3>AI/ML</h3>
           <p>
             I hold beginner to intermediate knowledge of AI/ML topics relevant
             in the industry. I’ve applied these concepts in college projects and
             internships.
           </p>
-          <a href="#" class="btn">Read More</a>
         </div>
         <div class="services-box">
-          <i class="bx bx-code-alt"></i>
+          <i class="bx bx-world"></i>
           <h3>Web Development</h3>
           <p>
             I have hands-on experience with HTML, CSS, JavaScript, and React.
             I've developed these skills through various personal projects.
           </p>
-          <a href="#" class="btn">Read More</a>
         </div>
 
         <div class="services-box">
@@ -130,15 +154,24 @@
             DBMS, Computer Networks, Cyber Security, Cloud Computing, ADA, and
             DSA.
           </p>
-          <a href="#" class="btn">Read More</a>
         </div>
         <div class="services-box">
-          <i class="bx bx-code-alt"></i>
+          <i class="bx bx-task"></i>
           <h3>Productivity Tools</h3>
           <p>
             I’m experienced with productivity tools like Microsoft Word, Excel,
             PowerPoint, and Canva. I also use modern AI tools to boost
             efficiency.
+          </p>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-bulb"></i>
+          <h3>Soft Skills</h3>
+          <p>
+            I excel in innovation, teamwork, analytical thinking, organization,
+            and keen observation, enabling me to approach challenges
+            strategically and collaborate effectively to drive impactful
+            solutions.
           </p>
           <a href="#" class="btn">Read More</a>
         </div>
@@ -148,7 +181,7 @@
       <h2 class="heading">Latest<span>Project</span></h2>
       <div class="portfolio-container">
         <div class="portfolio-box">
-          <img src="image\jan-vlacuha-Rns_A8bJ_dQ-unsplash.jpg" alt="" />
+          <img src="image\nubelson-fernandes--Xqckh_XVU4-unsplash.jpg" alt="" />
           <div class="portfolio-layer">
             <h4>Personal Portfolio</h4>
             <p>
@@ -166,7 +199,7 @@
           </div>
         </div>
         <div class="portfolio-box">
-          <img src="image\austin-poon-JO_S6ewBqAk-unsplash.jpg" alt="" />
+          <img src="image\nubelson-fernandes--Xqckh_XVU4-unsplash.jpg" alt="" />
           <div class="portfolio-layer">
             <h4>
               Facial Recognition and Identification Based Attendance System
@@ -188,21 +221,9 @@
           </div>
         </div>
         <div class="portfolio-box">
-  <img src="image\austin-poon-JO_S6ewBqAk-unsplash.jpg" alt="New Project" />
-  <div class="portfolio-layer">
-    <h4>New Project Title</h4>
-    <p>
-      Brief description of the new project goes here. Explain the purpose, technologies used, and key highlights.
-    </p>
-    <a href="https://github.com/kusumietamagoo/new-project" target="_blank">
-      <i class="bx bx-link-external"></i>
-    </a>
-  </div>
-</div>
-        <div class="portfolio-box">
           <img src="image\nubelson-fernandes--Xqckh_XVU4-unsplash.jpg" alt="" />
           <div class="portfolio-layer">
-            <h4>Deepfake Image & Forged Signature Detection Using CNN</h4>
+            <h4>Deepfake Image & Forged Signature Detection Using DeepLearning</h4>
             <p>
               in this Project i aim to incorporate CNN,VGG,Siamese netwrok and
               edge detection ML models to research and develop a full-proof
@@ -213,21 +234,30 @@
           </div>
         </div>
         <div class="portfolio-box">
-          <img src="image\kevin-canlas-QYHehJ9Iovs-unsplash.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Weather Website</h4>
-            <p>
-              In this project, I developed a Real-Time weather forcast web
-              application harnessing API to display current climate and weather
-              conditions in cities.
-            </p>
-            <a
-              href="https://github.com/kusumietamagoo/weather-website-"
-              target="_blank"
-            >
-               </div>
+  <img src="image\nubelson-fernandes--Xqckh_XVU4-unsplash.jpg" alt="AI Project" />
+  <div class="portfolio-layer">
+    <h4>GestroSync</h4>
+    <p>
+      Built a real-time hand gesture recognition system using Python and OpenCV, integrating machine learning models (KNN, SVM) to achieve 95%+ classification accuracy across 10+ gesture classes for interactive control applications.
+    <a href="https://github.com/kusumietamagoo/grammar-scoring-engine" target="_blank">
+      <i class="bx bx-link-external"></i>
+    </a>
+  </div>
+</div>
         <div class="portfolio-box">
-          <img src="image\kevin-canlas-QYHehJ9Iovs-unsplash.jpg" alt="" />
+  <img src="image\nubelson-fernandes--Xqckh_XVU4-unsplash.jpg" alt="AI Project" />
+  <div class="portfolio-layer">
+    <h4>Zomato Recomendation System</h4>
+    <p>
+      Developed a Zomato Restaurant Data Analysis and Recommendation System by automating data extraction for 15+ variables, sentiment analysis using NLP, and building a content-based recommendation system using Python.
+    </p>
+    <a href="https://github.com/kusumietamagoo/grammar-scoring-engine" target="_blank">
+      <i class="bx bx-link-external"></i>
+    </a>
+  </div>
+</div>
+        <div class="portfolio-box">
+          <img src="iimage\nubelson-fernandes--Xqckh_XVU4-unsplash.jpg" alt="" />
           <div class="portfolio-layer">
             <h4>Weather Website</h4>
             <p>
@@ -279,7 +309,7 @@
 
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2024 by Kusumieta | All Rights Reserved.</p>
+        <p>Copyright &copy; 2025 by Kusumieta | All Rights Reserved.</p>
       </div>
       <div class="footer-iconTop">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
