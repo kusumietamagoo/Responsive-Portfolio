@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <!--body-->
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
       <i class="bx bx-menu" id="menu-icon"></i>
@@ -29,11 +28,12 @@
 <!--     HOME -->
     <section class="home lilac-theme" id="home">
   <div class="home-img">
-    <img src="image\selfie.jpg" alt="Kusumieta's photo" />
-  </div>
+<!--     <img src="image\selfie.jpg" alt="Kusumieta's photo" />
+  </div> -->
+     <div id="animated-bg"></div>
   <div class="home-content">
         <h3>Hello,It's Me</h3>
-        <h1>Kusumieta Magoo</h1>
+        <h1><span class="fancy-name">Kusumieta Magoo</span></h1>
         <h3>And I'm a <span class="multiple-text"></span></h3>
         <h3>Currently running on caffeine and curiosity
            — scroll on to see the magic unfold!</h3>
@@ -64,21 +64,24 @@
     </section>
     <section class="about pink-theme" id="about">
       <div class="about-img">
-        <img src="https://wallpaperaccess.com/full/1385382.jpg" alt="" />
+         <img src="image\selfie.jpg" alt="Kusumieta's photo" />
       </div>
       <div class="about-content">
         <h2 class="heading">About<span>Me</span></h2>
         <h3>Software Developer</h3>
-        <p>
-          Passionate B.Tech CSE graduate from Amity University Noida,with a keen interest in Software Development 
-          and AI/ML. Eager to explore the intersection of technology and innovation.
-          Enthusiastic about leveraging cutting-edge algorithms to solve
-          real-world problems. Committed to continuous learning and staying
-          informed of industry trends. 
-        </p>
-<!--         <a href="#" class="btn">Read More</a> -->
+       <p>
+  Passionate and driven B.Tech Computer Science graduate from Amity University, Noida, with a strong foundation in software development, artificial intelligence, and machine learning. I thrive on building scalable, real-world solutions that blend innovation with functionality. Whether it’s writing efficient code, architecting intelligent systems, or exploring the cutting edge of technology, I approach every challenge with curiosity and a problem-solving mindset.
+  <br /><br />
+  Proficient in modern programming languages, cloud services, and AI frameworks, I’m committed to continuous learning and staying ahead in this rapidly evolving tech landscape. I aspire to contribute meaningfully to impactful products and be part of teams that shape the future of technology.
+  <br /><br /> 
+          <p><strong>Languages:</strong> English (Fluent), German (Intermediate) , Hindi(Fluent)</p>
+<p><strong>Education:</strong>Amity University, Noida - Bachelor of Technology</p>
+<p>Computer Science and Engineering</p>
+<p>Obtained Score: 8.0 CGPA</p>
+        </p> 
       </div>
     </section>
+
     <section class="services lilac-theme" id="services">
       <h2 class="heading">My<span>Skills</span></h2>
       <div class="services-container">
@@ -330,11 +333,7 @@ Designed and implemented a user-friendly interface for the tool using C#, enhanc
 
   </div>
 </section>
-<!--         </div>
-      </div>
-    </section> -->
-
-
+    
     <!-- ACHIEVEMENTS SECTION -->
 <section class="experience lilac-theme" id="achievements">
   <h2 class="heading">Notable <span>Achievements</span></h2>
@@ -344,7 +343,9 @@ Designed and implemented a user-friendly interface for the tool using C#, enhanc
       <h3>Research Paper Publication</h3>
       <p class="duration">June 2025</p>
       <p class="description">
-        Successfully published a research paper titled <em>“Deepfake Image and Forged Signature Detection using CNN and VGG Networks”</em> in an IEEE-indexed international conference. Contributed to model development, experimentation, and authored the complete manuscript.
+        Successfully published a research paper titled <em>“Deepfake Image and Forged Signature Detection using Machine Learning”</em> in an IEEE-indexed international conference. Contributed to model development, experimentation, and authored the complete manuscript.
+      <br><br>
+    👉 <a href="https://ieeexplore.ieee.org/document/11051925" target="_blank" style="color: var(--main-color); text-decoration: underline;">View Publication</a>
       </p>
     </div>
 
@@ -391,10 +392,17 @@ Designed and implemented a user-friendly interface for the tool using C#, enhanc
       </div>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+   <!-- Animation Libraries -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="script.js"></script>
+<!-- VANTA.js Dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+<!--  Custom JS -->
+<script src="script.js"></script>
+
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec";
