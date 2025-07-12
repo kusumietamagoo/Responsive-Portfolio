@@ -47,14 +47,33 @@ ScrollReveal().reveal(
 ScrollReveal().reveal(".home-content h1,.about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p,.about-content", { origin: "right" });
 
+document.addEventListener("DOMContentLoaded", () => {
+  VANTA.GLOBE({
+    el: "#animated-bg",
+    mouseControls: true,
+    touchControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.0,
+    scaleMobile: 1.0,
+    color: 0xff69b4,      // hot pink
+    color2: 0xc8a2c8,     // lilac
+    backgroundColor: 0x111111
+  });
+});
+
+
 const typed = new Typed(".multiple-text", {
   strings: [
-    "CSE Student at Amity University",
+    "Computer Science and Engineering Graduate",
+    "Passionate Coder",
     "AI/ML Enthusiast",
+    "Problem Solver",
+    "Innovation Addict",
     "Content Writer",
   ],
-  typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 1000,
+  typeSpeed: 150,
+  backSpeed: 150,
+  backDelay: 900,
   loop: true,
 });
