@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilderberg&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +17,7 @@
   --second-bg-color: #2c2c2c;    /* Grey */
   --text-color: #ffffff;         /* White */
   --main-color-lilac: #c8a2c8;   /* Lilac */
-  --main-color-pink: #ff69b4;    /* Hot pink */
+  --main-color-pink: #FFB7CE;    /*pinl*/
 }
 
 /* Dynamic themes based on section background */
@@ -27,6 +29,16 @@
 .lilac-theme {
   --main-color: var(--main-color-lilac);
   background-color: var(--bg-color);
+   background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  background-repeat: repeat;
+}
+.fancy-name {
+  font-family: 'Bilderberg', serif;
+  font-style: italic;
+  font-weight: normal;
+  color: var(--main-color-lilac);
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 5px rgba(255, 183, 206, 0.6);
 }
 
 html {
@@ -54,7 +66,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .header.sticky {
@@ -86,14 +98,42 @@ section {
   display: none;
 }
 
-.home {
+/* .home {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 2rem;
   gap: 2rem;
+} */
+.home {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  min-height: 100vh;
+  text-align: center;
+  padding: 10rem 5% 2rem;
+  z-index: 1;
+  overflow: hidden;
 }
+#animated-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+ width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+.home-content {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 3rem;
+  border-radius: 2rem;
+  backdrop-filter: blur(4px);
+}
+
 
 .home-img img {
   width: 350px;
@@ -117,6 +157,7 @@ section {
 .home-content h3 {
   font-size: 3.2rem;
   font-weight: 700;
+/*   text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color); */
 }
 
 .home-content h3:nth-of-type(2) {
@@ -282,25 +323,28 @@ span {
   gap: 2rem;
 }
 .experience-box {
-  background: #323946;
+  background: var(--second-bg-color);
   padding: 20px;
-  border-left: 5px solid #0ef;
+  border-left: 5px solid var(--main-color);  /* dynamic */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: border-left 0.3s ease;
 }
 .experience-box h3 {
   font-size: 3rem;
-  color: #0ef;
+  color: var(--main-color);  /* dynamic */
   margin-bottom: 5px;
 }
+
 .experience-box .duration {
   font-size: 1.5rem;
   color: #ccc;
   margin-bottom: 10px;
 }
+
 .experience-box .description {
   font-size: 2rem;
-  color: #e0e0e0;
+  color: var(--text-color);  /* dynamic text color */
   line-height: 1.6;
 }
 
@@ -385,6 +429,21 @@ span {
 }
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".portfolio-box"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.3,
+  });
+</script>
+
+
+
+
+
 .contact h2{
    margin-bottom: 3rem;
 }
@@ -461,6 +520,8 @@ span {
 .lilac-theme .portfolio-container,
 .lilac-theme .portfolio-box {
   background-color: var(--bg-color) !important;
+   background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  background-repeat: repeat;
 }
 
 /* Optional: Ensure text color inside boxes follows theme */
