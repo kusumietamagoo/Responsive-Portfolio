@@ -24,12 +24,14 @@
 .pink-theme {
   --main-color: var(--main-color-pink);
   background-color: var(--second-bg-color);
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  background-repeat: repeat;
 }
 
 .lilac-theme {
   --main-color: var(--main-color-lilac);
   background-color: var(--bg-color);
-   background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
   background-repeat: repeat;
 }
 .fancy-name {
@@ -89,7 +91,7 @@ section {
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--main-color);
+color: var(--main-color);
 }
 
 #menu-icon {
@@ -98,48 +100,41 @@ section {
   display: none;
 }
 
-/* .home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 2rem;
-  gap: 2rem;
-} */
 .home {
   position: relative;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;      /* Center vertically */
+  justify-content: space-between;
+  align-items: center;
   min-height: 100vh;
-  text-align: center;
-  padding: 10rem 5% 2rem;
+  padding: 10rem 5%;
   z-index: 1;
   overflow: hidden;
 }
+
 #animated-bg {
   position: absolute;
   top: 0;
   left: 0;
- width: 100vw;
-  height: 100vh;
+  width: 120vw; 
+  height: 120vh; 
+  transform: scale(1.2) translateX(10vw); 
   z-index: 0;
 }
+
 .home-content {
-  position: relative;
-  z-index: 1;
+  flex: 1;
+  max-width: 50%;
+  z-index: 2;
   background: rgba(0, 0, 0, 0.4);
   padding: 3rem;
   border-radius: 2rem;
   backdrop-filter: blur(4px);
 }
 
-
 .home-img img {
-  width: 350px;
-  height: 380px;
-  object-fit: cover;
-  border-radius: 2rem;
+  width: 600px;
+  height: auto;
+  object-fit: contain;
 }
 
 @keyframes floatImage {
